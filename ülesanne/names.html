@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimed</title>
+</head>
+<body>
+    <h1>Nimed</h1>
+
+    <!-- Vorm uue objekti lisamiseks -->
+    <h2>Lisa uus nimi:</h2>
+    <form id="add-form">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" required>
+        <button type="button" id="add-button">Lisa</button>
+    </form>
+
+    <!-- Tabel olemasolevate nimede kuvamiseks -->
+    <h2>Olemasolevad nimed:</h2>
+    <table id="name-table">
+        <thead>
+            <tr>
+                <th>Nimi</th>
+                <th>Tegevused</th>
+            </tr>
+        </thead>
+        <tbody id="name-table-body">
+            <!-- Nimede andmed kuvatakse siia -->
+        </tbody>
+    </table>
+
+    <!-- JavaScripti fail -->
+    <script src="names.js"></script>
+</body>
+</html>

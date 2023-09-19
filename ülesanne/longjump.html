@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaugushüpe</title>
+</head>
+<body>
+    <h1>Kaugushüpe</h1>
+
+    <!-- Vorm uute andmete lisamiseks -->
+    <h2>Lisa uued tulemused:</h2>
+    <form id="add-form">
+        <label for="name">Õpilase nimi:</label>
+        <input type="text" id="name" required>
+        <label for="results">Tulemused (eraldatud komadega):</label>
+        <input type="text" id="results" required>
+        <button type="button" id="add-button">Lisa</button>
+    </form>
+
+    <!-- Tabel olemasolevate tulemuste kuvamiseks -->
+    <h2>Olemasolevad tulemused:</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Õpilase nimi</th>
+                <th>Tulemused</th>
+                <th>Parem tulemus</th>
+                <th>Keskmine tulemus</th>
+                <th>Tegevused</th>
+            </tr>
+        </thead>
+        <tbody id="data-table-body">
+            <!-- Andmete kuvamine algseisus -->
+        </tbody>
+    </table>
+
+    <!-- JavaScripti fail -->
+    <script src="longjump.js"></script>
+</body>
+</html>

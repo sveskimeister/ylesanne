@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sünniaeg ja vanus</title>
+</head>
+<body>
+    <h1>Sünniaeg ja vanus</h1>
+
+    <!-- Vorm uue objekti lisamiseks -->
+    <h2>Lisa uued andmed:</h2>
+    <form id="add-form">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" required>
+        <label for="isikukood">Isikukood:</label>
+        <input type="text" id="isikukood" required>
+        <button type="button" id="add-button">Lisa</button>
+    </form>
+
+    <!-- Tabel olemasolevate andmete kuvamiseks -->
+    <h2>Olemasolevad andmed:</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Nimi</th>
+                <th>Isikukood</th>
+                <th>Sünniaeg</th>
+                <th>Vanus</th>
+                <th>Tegevused</th>
+            </tr>
+        </thead>
+        <tbody id="data-table-body">
+            <!-- Andmete kuvamine algseisus -->
+        </tbody>
+    </table>
+
+    <!-- JavaScripti fail -->
+    <script src="birthdates.js"></script>
+</body>
+</html>
